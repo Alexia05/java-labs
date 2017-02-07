@@ -53,7 +53,7 @@ class GPA_Calculator {
      * @return the GPA
      */
     public double computeGPA() {
-        double gradePointAvg = gradePoints / creditsAttempted;
+        double gradePointAvg = gradePoints / (double)creditsAttempted;
         return gradePointAvg;
     }
 
