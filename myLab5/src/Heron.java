@@ -37,15 +37,30 @@ public class Heron
         // formula that computes half of the perimeter (the perimeter
         // is the sum of the lengths of the sides)
 
-        double halfPerim = 0;
-
+        double a = side1;
+        double b = side2;
+        double c = side3;
+        double s = (a+b+c);
+        double halfPerim = s*0.5;
+        double area1 = (halfPerim * (halfPerim - a) * (halfPerim - b) * (halfPerim - c));
 
 
         // replace the 0.0 in the declaration below with Heron's formula
 
-        double area = 0.0;
+        double area = Math.sqrt(area1);
 
         return area;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     /**
