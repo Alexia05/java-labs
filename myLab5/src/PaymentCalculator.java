@@ -50,7 +50,12 @@ public class PaymentCalculator {
         // modify the following statement so that the proper value is assigned
         // to variable "payment," instead of 0.0.  The formula appears above...
 
-        double payment = 0.0;
+        double A = principal;
+        double R = mRate;
+        double N = months;
+        double aidCalc = Math.pow((1 + R), -N);
+        
+        double payment = (A*R) / (1 - (aidCalc));
 
         return payment;
     }
