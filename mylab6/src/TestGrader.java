@@ -19,17 +19,16 @@ class TestGrader
 		
 		score = Integer.parseInt(input) ;
 
-		if (score >= MIN_PASS)
-		{
-			grade = "PASS" ;
-		}
-
 		if (score >= MIN_GOOD)
 		{
 			grade = "GOOD" ;
 		}
-
-		grade = "FAIL" ;
+                else if (score >= MIN_PASS)
+		{
+			grade = "PASS" ;
+		}
+                else{
+		grade = "FAIL" ;}
 
 		System.out.println("\n" + score + ": " + grade) ;
 	}
