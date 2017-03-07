@@ -24,7 +24,7 @@ public class GoldWatch
 		
 		years = Integer.parseInt(input) ;
 		
-		if  (age >= RETIREMENT_AGE)
+		if  (age >= RETIREMENT_AGE || (age> 50  && years >= 25))
 		{
 			eligible = true ;
 		}
@@ -32,13 +32,14 @@ public class GoldWatch
 		{
 			eligible = false ;
 		}
+                
 
 		if  (eligible)
 		{
 			System.out.println("\nELIGIBLE") ;
 		}
 		else
-		{
+	        {
 			System.out.println("\nNOT ELIGIBLE") ;
 		}
 	}
