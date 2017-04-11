@@ -162,8 +162,8 @@ public class AirDataListTester
             Scanner in = new Scanner (line);
 
             // b. extract the 3 tokens from the current line
-             int revenueMiles = in.nextInt();
              String airline = in.next();
+             int revenueMiles = in.nextInt();
              int passengerMiles = in.nextInt();
 
 
@@ -172,7 +172,7 @@ public class AirDataListTester
 
                      
             // d. add the object to the list
-         //   AirDataList.addToList();
+            list.addToList(current);
 
         }
         System.out.println();
